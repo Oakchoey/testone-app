@@ -1,3 +1,11 @@
+แหล่งdataset
+model 1
+https://raw.githubusercontent.com/dsrscientist/Data-Science-ML-Capstone-Projects/master/Automobile_insurance_fraud.csv
+model 2
+https://www.kaggle.com/datasets/muratkokludataset/rice-image-dataset
+
+
+
 # 🎈 Blank app template
 
 A simple Streamlit app template for you to modify!
