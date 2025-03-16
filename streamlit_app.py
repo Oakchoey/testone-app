@@ -102,11 +102,11 @@ elif option in ["model1", "model2"]:
             # โหลด Keras model (.h5)
             model = load_model(model_path)  # ใช้ load_model จาก Keras
 
-        st.write(" **กรอกค่าฟีเจอร์สำหรับพยากรณ์:**")
+        st.write(" **กรอกค่าฟีเจอร์**")
 
         if option == "model2":
             # If model2 is selected, let the user upload an image
-            uploaded_image = st.file_uploader("อัพโหลดรูปภาพสำหรับพยากรณ์:", type=["jpg", "jpeg", "png"])
+            uploaded_image = st.file_uploader("อัพโหลดรูปภาพ", type=["jpg", "jpeg", "png"])
             
             if uploaded_image is not None:
                 image = Image.open(uploaded_image)
@@ -137,7 +137,7 @@ elif option in ["model1", "model2"]:
                     # ได้ประเภทข้าวจาก index
                     predicted_rice = rice_classes[predicted_index]
 
-                    st.success(f" ค่าพยากรณ์จาก Model2: {predicted_rice}")
+                    st.success(f" ผลการทำนายจาก Model2: {predicted_rice}")
 
 
         else:
@@ -177,8 +177,7 @@ elif option in ["model1", "model2"]:
             user_inputs["auto_model"] = st.selectbox("Auto Model", ["Camry", "Civic", "F-150", "X5"])
             user_inputs["auto_year"] = st.selectbox("Auto Year", list(range(1980, 2025)))
 
-            # กดปุ่มแล้วทำพยากรณ์
-            if st.button(" พยากรณ์ผลลัพธ์"):
+            if st.button(" ทำนาย "):
                 try:
                     input_df = pd.DataFrame([user_inputs])
                     label_encoder = LabelEncoder()
@@ -194,7 +193,7 @@ elif option in ["model1", "model2"]:
                     else:  # Model2 is a Keras model
                         prediction = model.predict(input_values)
 
-                    st.success(f" ค่าพยากรณ์จาก {option}: {prediction[0]}")
+                    st.success(f" ผลจากการทำนาย {option}: {prediction[0]}")
                 except ValueError:
                     st.error(" กรุณากรอกค่าที่ถูกต้องในแต่ละฟีเจอร์")
     except FileNotFoundError:
