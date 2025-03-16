@@ -1,9 +1,16 @@
 แหล่งdataset
+
 model 1
 https://raw.githubusercontent.com/dsrscientist/Data-Science-ML-Capstone-Projects/master/Automobile_insurance_fraud.csv
+
 model 2
 https://www.kaggle.com/datasets/muratkokludataset/rice-image-dataset
 
+โค้ดทีใช้สำหรับ train model
+
+model1.ipynb
+
+rice-classification-by-cnn.ipynb
 
 
 # 🎈 Blank app template
