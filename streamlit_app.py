@@ -1,10 +1,11 @@
 import streamlit as st
 import pandas as pd
 import pickle
-from keras.models import load_model
+from keras.models import load_model # type: ignore
 from sklearn.preprocessing import LabelEncoder
 from PIL import Image
 import numpy as np
+
 
 
 

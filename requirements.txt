@@ -1,5 +1,6 @@
 streamlit
 keras
+keras.models
 keras_preprocessing
 pandas
 scikit-learn
