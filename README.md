@@ -7,7 +7,9 @@ model 2
 https://www.kaggle.com/datasets/muratkokludataset/rice-image-dataset
 
 โค้ดทีใช้สำหรับ train model
+
 model1.ipynb
+
 rice-classification-by-cnn.ipynb
 
 
