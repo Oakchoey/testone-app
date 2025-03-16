@@ -4,3 +4,4 @@ keras.models
 keras_preprocessing
 pandas
 scikit-learn
+tensorflow
