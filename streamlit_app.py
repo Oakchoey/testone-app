@@ -88,7 +88,6 @@ elif option == "ข้อมูล Model 2":
     **รายละเอียดที่มา:**
     - https://www.kaggle.com/code/pkdarabi/rice-classification-by-cnn/
 
-
     """)
 
 elif option in ["model1", "model2"]:
